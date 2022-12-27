@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responda-me se for capaz</title>
+	</head>
+	
+	<body>
+		<input/>
+		<button>Você pensa que o Flamengo é time?<br>Sim ou Não</button>
+
+		<script>
+
+			var entrada = document.querySelector("input");
+			var resposta = "Sim";
+
+			function alerta() {
+
+				if(entrada.value == resposta) {
+					alert("ERROU! O FLAMENGO É SELEÇÃO, PORRA!");
+				} 
+				if(entrada.value == "Não") {
+					alert("EM DEZEMBRO DE 81!");
+					document.Write("Bem vindo a tropa dos coringa do mengão");
+				} else {
+					alert("Responda corretamente, Sim ou Não!");
+			}
+
+			var botao = document.querySelector("button");
+			botao.onclick = alerta;
+		</script>
+	</body>
+</html>
